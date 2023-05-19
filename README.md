@@ -29,14 +29,14 @@ path/opencv_createsamples.exe -info pos.txt -w 24 -h 24 -num 1000 -vec pos.vec
 path/opencv_traincascade.exe -data casecade/ -vec pos.vec -bg neg.txt -w 24 -h 24 -numPos 101 -numNeg 202 -numStages 12 -maxFalseAlarmRate 0.3 -minHitRate 0.999
 ```
 ###### DİPNOT: 
-> Negatif örnek sayısının positif örnek ssayısından fazla olmasına dikkat et.
-> Negatif sayısını orjinal negatif sayısından fazla yazabilirsin çünkü kendisi negatif resimleri kullanıp yeni negatif resim üretebiliyor.
-> Genelde pozitif resmin iki katı negatif resim yazılıyor.
-> Minimum 100 pos 100 neg resim kullan ne kadar fazlaysa o kadar iyi verim alırsın.
-> Farklı positive resim örnekleri koy yoksa vec oluştururken hata alırsın gereksiz benzer fazla resim varsa.
-> -w ve -h degerlerini min 24 gir bu tespit edilicek min resim pixel sayısını ifade ediyor
-> pos.vec oluştururken num sayısına dikkat et bunu positivee resim sayısından falza yap bu örnek vector sayısını temsil ediyor.
-> positive resimlerin boyutlarını aşırı fazla secme yoksa opencv_annotation.exe uygulaması resimleri tam boyutunda acmaz sıkıntı yaşarsın. Eğer sorun yaşarsan başka bir python koduyla resized işlemi uygula
+- Negatif örnek sayısının positif örnek ssayısından fazla olmasına dikkat et.
+- Negatif sayısını orjinal negatif sayısından fazla yazabilirsin çünkü kendisi negatif resimleri kullanıp yeni negatif resim üretebiliyor.
+- Genelde pozitif resmin iki katı negatif resim yazılıyor.
+- Minimum 100 pos 100 neg resim kullan ne kadar fazlaysa o kadar iyi verim alırsın.
+- Farklı positive resim örnekleri koy yoksa vec oluştururken hata alırsın gereksiz benzer fazla resim varsa.
+- -w ve -h degerlerini min 24 gir bu tespit edilicek min resim pixel sayısını ifade ediyor
+- pos.vec oluştururken num sayısına dikkat et bunu positivee resim sayısından falza yap bu örnek vector sayısını temsil ediyor.
+- positive resimlerin boyutlarını aşırı fazla secme yoksa opencv_annotation.exe uygulaması resimleri tam boyutunda acmaz sıkıntı yaşarsın. Eğer sorun yaşarsan başka bir python koduyla resized işlemi uygula
 
 Parametrelere ve detaylara şuradan bakabilirsiniz: https://docs.opencv.org/4.2.0/dc/d88/tutorial_traincascade.html
 
