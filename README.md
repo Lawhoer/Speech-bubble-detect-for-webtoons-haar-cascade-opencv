@@ -1,4 +1,4 @@
-# HaarCascade modeli yapım aşamaları vs
+# Haar Cascade modeli yapım aşamaları vs
 
 1- Öncelikle projemide "negative" ve "positif" klasörleri oluşturup içine negatif ve pozitif olmak üzere örnek resimlerimizi yüklüyoruz
 
