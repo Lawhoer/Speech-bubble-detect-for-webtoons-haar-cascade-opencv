@@ -14,7 +14,7 @@ def generate_negatife_description_file():
 
 generate_negatife_description_file()
 ```
-###### 3)opencv nin 3.x.x versiyonunu indiriyoruz cünkü yeni versiyonlarında bizim için lazım olan 1-2 dosya yok.İndirdikten sonra dosyanın içindeki "opencv_annotation.exe" dosyasını bulup python projesinin terminaline yazıyoruz. Örnek kod:
+###### 3)opencv nin 3.x.x versiyonunu indiriyoruz cünkü yeni versiyonlarında bizim için lazım olan 1-2 dosya yok.İndirdikten sonra dosyanın içindeki "opencv_annotation.exe" dosyasını bulup python projesinin terminaline yazıyoruz. Bu bize "pos.txt" dosyasını ve resimlerdeki kordinatları vericek. Örnek kod:
 ```
 path/opencv_annotation.exe --annotations=pos.txt --images=positive/ --maxWindowHeight=800
 ``` 
