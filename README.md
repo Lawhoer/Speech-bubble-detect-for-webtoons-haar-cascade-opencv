@@ -1,7 +1,8 @@
 # Model Acıklaması
 * Webtoonlar için sayfalardaki konuşma balonlarını tespit edebilen bir haar cascade modeli.
+* Şuanda cok az örnek resimle oluşturuldu o yüzden karmaşık balonlarda iyi sonuc vermiyor ama idare eder şimdilik.
  
-![Kodun geneli](https://github.com/Lawhoer/Speech-bubble-detect-haar-cascade/blob/main/3.jpg)
+![Kodun geneli](https://github.com/Lawhoer/Speech-bubble-detect-haar-cascade/blob/main/3.JPG)
 ![Kodun geneli](https://github.com/Lawhoer/Speech-bubble-detect-haar-cascade/blob/main/2.jpg)
 
 # Haar Cascade modeli yapım aşamaları vs
