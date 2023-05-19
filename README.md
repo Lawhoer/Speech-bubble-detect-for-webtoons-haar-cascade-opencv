@@ -27,6 +27,7 @@ path/opencv_annotation.exe --annotations=pos.txt --images=positive/ --maxWindowH
 path/opencv_createsamples.exe -info pos.txt -w 24 -h 24 -num 1000 -vec pos.vec
 ```
 ###### 6)Yine opencv nin 3.x.x versiyonunda "opencv_traincascade.exe" dosyasının yolunu bulup train işlemine başlıyoruz.Projede modeli kaydediceğiniz bir klasör acın. Örnek kod:
+###### Negatif örnek sayısının positif örnek ssayısından fazla olmasına dikkat et.Negatif sayısını orjinal negatif sayısından fazla yazabilirsin çünkü kendisi negatif resimleri kullanıp yeni negatif resim üretebiliyor. Genelde pozitif resmin iki katı negatif resim yazılıyor .Minimum 100 pos 100 neg resim kullan ne kadar fazlaysa o kadar iyi verim alırsın.
 ```
 path/opencv_traincascade.exe -data casecade/ -vec pos.vec -bg neg.txt -w 24 -h 24 -numPos 101 -numNeg 202 -numStages 12 -maxFalseAlarmRate 0.3 -minHitRate 0.999
 ```
