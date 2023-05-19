@@ -40,3 +40,6 @@ path/opencv_traincascade.exe -data casecade/ -vec pos.vec -bg neg.txt -w 24 -h 2
 
 Parametrelere ve detaylara şuradan bakabilirsiniz: https://docs.opencv.org/4.2.0/dc/d88/tutorial_traincascade.html
 
+###### README.md'yi yazarken pek ugraşmadım bunlar kendime aldıgım notlar sonra ugrşırsam diye.
+
+
